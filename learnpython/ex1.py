@@ -1,0 +1,8 @@
+# -*- coding: UTF-8 -*-
+print "Hello World!"
+print "Hello again"
+print "I like typing this."
+print "This is fun"
+print 'Yay! Printing'
+print "试试中文"
+#print 'I "said" do not touch this.'
