@@ -1,0 +1,21 @@
+1、sleep 和wait 的区别
+	sleep不会释放锁，wait会释放当前锁
+	
+2、sleep和sleep(0)的区别
+	sleep(0)：如果线程调度器的可运行队列中有大于当前线程优先级的就绪线程存在，
+	操作系统会将当前线程从处理器上移除，调度其它优先级高的就绪线程运行；如果
+	没有其他的可运行线程或者就绪线程的优先级均低于当前线程优先级，那么当前线程
+	会继续运行，就像没有调用sleep(0)一样。
+	
+	sleep(1):调用线程会从线程调度器的可运行队列中被移除一段时间,通常情况下，
+	系统的时间精度为 10 ms，那么指定任意少于 10 ms
+	但大于 0 ms 的睡眠时间，均会向上求值为 10 ms。
+	
+3、ThreadPoolExecutor有哪些配置项？
+	corePoolSize:核心池大小
+	maximumPoolSize:最大线程数
+	keepAliveTime:线程没有任务执行时，最多保持多长时间会终止，然后维持corePoolSize大小
+	unit：keepAliveTime的时间单位
+	workQueue:阻塞队列
+	threadFactory:线程工厂，主要用来创建线程，比如可以指定线程的名字
+	handler：如果线程池已满，新的任务的处理方式
