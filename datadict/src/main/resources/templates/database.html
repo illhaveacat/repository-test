@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库信息</title>
+    <script type="text/javascript" src="/js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/datadict.js"></script>
+</head>
+<body style="background-image:url(/images/img_bg_2.jpg); background-size:cover;background-repeat:no-repeat; text-align:center;">
+<div style="margin: 0 auto;padding-bottom: 0%;padding-top: 7.5%;width: 380px;">
+    <div>
+    <a href="#" onclick="javascript:window.open('/pages/addDatabase.html','_blank','height=300, width=600, top=(window.screen.availHeight-30-200)/2, left=(window.screen.availWidth-10-400)/2, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');">添加新的数据库</a>
+    <br><br><span th:each="database:${databases}">
+        <img src="/images/database.png" style="width:20px;height:30px;" />
+        <a href="javascript:void(0);" th:text="${database.databaseName}"  th:onclick="|showTables('${database.databaseId}','${database.databaseName}')|"  >null</a>
+    </span>
+    </div>
+</div>
+</body>
+</html>

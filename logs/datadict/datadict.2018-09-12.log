@@ -1,0 +1,593 @@
+08:56:50.177 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 9364 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+08:56:50.193 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+08:56:50.334 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@433d61fb: startup date [Wed Sep 12 08:56:50 CST 2018]; root of context hierarchy
+08:56:52.037 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 65432 (http)
+08:56:52.052 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-65432"]
+08:56:52.068 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:56:52.068 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+08:56:52.084 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+08:56:52.209 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:56:52.209 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1875 ms
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+08:56:52.302 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+08:56:52.769 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:56:52.941 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@433d61fb: startup date [Wed Sep 12 08:56:50 CST 2018]; root of context hierarchy
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+08:56:53.019 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[POST]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+08:56:53.035 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:56:53.035 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:56:53.050 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:56:53.050 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:56:53.175 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+08:56:53.504 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:56:53.519 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+08:56:53.519 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+08:56:53.519 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-65432"]
+08:56:53.535 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:56:53.550 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 65432 (http) with context path ''
+08:56:53.566 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 3.811 seconds (JVM running for 4.281)
+08:57:25.956 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 12140 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+08:57:25.956 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+08:57:26.050 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@433d61fb: startup date [Wed Sep 12 08:57:26 CST 2018]; root of context hierarchy
+08:57:27.753 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:57:27.769 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:57:27.784 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:57:27.784 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+08:57:27.800 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+08:57:27.909 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:57:27.909 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1859 ms
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+08:57:28.003 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+08:57:28.472 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:57:28.628 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@433d61fb: startup date [Wed Sep 12 08:57:26 CST 2018]; root of context hierarchy
+08:57:28.706 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[POST]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:57:28.722 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:57:28.738 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:57:28.738 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:57:28.847 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+08:57:29.050 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:57:29.050 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+08:57:29.050 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+08:57:29.066 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:57:29.066 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:57:29.081 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:57:29.081 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 3.578 seconds (JVM running for 4.042)
+08:57:37.232 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08:57:37.233 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+08:57:37.249 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+08:57:37.997 logback [http-nio-8080-exec-10] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+08:57:50.077 logback [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+08:58:00.623 logback [http-nio-8080-exec-6] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+08:58:38.371 logback [http-nio-8080-exec-5] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+08:58:40.453 logback [http-nio-8080-exec-4] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+08:59:22.099 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 16068 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+08:59:22.104 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+08:59:22.288 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4690b489: startup date [Wed Sep 12 08:59:22 CST 2018]; root of context hierarchy
+08:59:24.295 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:59:24.309 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:59:24.321 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:59:24.321 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+08:59:24.330 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+08:59:24.468 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:59:24.469 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2180 ms
+08:59:24.626 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:59:24.626 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+08:59:24.627 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+08:59:25.257 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:59:25.711 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4690b489: startup date [Wed Sep 12 08:59:22 CST 2018]; root of context hierarchy
+08:59:25.809 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+08:59:25.810 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+08:59:25.811 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+08:59:25.811 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+08:59:25.812 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+08:59:25.814 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+08:59:25.816 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+08:59:25.817 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[POST]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+08:59:25.817 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+08:59:25.821 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:59:25.822 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:59:25.857 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:59:25.857 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:59:26.039 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+08:59:26.306 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:59:26.308 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+08:59:26.317 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+08:59:26.327 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:59:26.341 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:59:26.360 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:59:26.365 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 4.768 seconds (JVM running for 5.358)
+08:59:29.707 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08:59:29.707 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+08:59:29.729 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+08:59:38.642 logback [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+09:00:10.214 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 12972 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+09:00:10.221 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+09:00:10.360 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@460d0a57: startup date [Wed Sep 12 09:00:10 CST 2018]; root of context hierarchy
+09:00:12.344 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:00:12.358 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:00:12.373 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:00:12.374 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+09:00:12.385 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+09:00:12.537 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:00:12.538 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2177 ms
+09:00:12.689 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:00:12.689 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:00:12.689 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:00:12.689 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:00:12.689 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+09:00:12.690 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+09:00:12.690 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+09:00:12.690 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+09:00:13.261 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:00:13.520 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@460d0a57: startup date [Wed Sep 12 09:00:10 CST 2018]; root of context hierarchy
+09:00:13.611 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+09:00:13.616 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+09:00:13.616 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+09:00:13.617 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+09:00:13.617 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+09:00:13.617 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+09:00:13.619 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+09:00:13.619 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+09:00:13.620 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+09:00:13.622 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:00:13.623 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:00:13.651 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:00:13.651 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:00:13.808 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+09:00:14.202 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:00:14.204 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+09:00:14.211 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+09:00:14.229 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:00:14.242 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:00:14.262 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:00:14.268 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 4.538 seconds (JVM running for 5.065)
+09:00:18.251 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:00:18.251 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:00:18.274 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+09:00:29.978 logback [http-nio-8080-exec-10] INFO  c.t.d.controller.LoginController - =================校验验证码
+09:00:30.016 logback [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:00:30.271 logback [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:00:30.304 logback [http-nio-8080-exec-10] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+10:24:24.890 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 15124 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+10:24:24.890 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+10:24:24.999 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e117e3: startup date [Wed Sep 12 10:24:24 CST 2018]; root of context hierarchy
+10:24:26.847 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:24:26.862 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:24:26.862 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:24:26.862 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:24:26.878 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+10:24:26.987 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:24:26.987 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1988 ms
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+10:24:27.081 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:24:27.646 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:24:27.834 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e117e3: startup date [Wed Sep 12 10:24:24 CST 2018]; root of context hierarchy
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:24:27.927 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:24:27.943 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:24:27.943 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:24:28.052 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:24:28.346 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:24:28.346 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:24:28.346 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:24:28.361 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:24:28.377 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:24:28.392 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:24:28.392 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 3.942 seconds (JVM running for 4.436)
+10:25:05.659 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:25:05.662 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:25:05.687 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+10:25:06.661 logback [http-nio-8080-exec-10] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+10:25:14.273 logback [http-nio-8080-exec-1] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+10:25:36.656 logback [http-nio-8080-exec-1] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+10:25:41.141 logback [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+10:26:03.094 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 2420 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+10:26:03.100 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+10:26:03.215 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Wed Sep 12 10:26:03 CST 2018]; root of context hierarchy
+10:26:05.365 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:26:05.380 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:26:05.396 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:26:05.396 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:26:05.396 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+10:26:05.521 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:26:05.521 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2306 ms
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+10:26:05.615 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:26:06.162 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:06.359 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Wed Sep 12 10:26:03 CST 2018]; root of context hierarchy
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+10:26:06.437 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:26:06.453 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:26:06.453 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:26:06.484 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:06.484 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:06.593 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:26:06.843 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:26:06.843 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:26:06.843 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:26:06.859 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:26:06.875 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:26:06.890 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:26:06.890 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 4.311 seconds (JVM running for 4.81)
+10:26:08.961 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:26:08.961 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:26:08.976 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+10:26:09.023 logback [http-nio-8080-exec-1] INFO  c.t.d.controller.LoginController - =================校验验证码
+10:26:17.658 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - =================校验验证码
+10:26:17.678 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:26:17.896 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:26:17.912 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+10:28:02.275 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 4248 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+10:28:02.275 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+10:28:02.447 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60b4beb4: startup date [Wed Sep 12 10:28:02 CST 2018]; root of context hierarchy
+10:28:04.846 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:28:04.862 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:28:04.878 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:28:04.878 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:28:04.893 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+10:28:05.018 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:28:05.018 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2571 ms
+10:28:05.128 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+10:28:05.143 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:28:05.755 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:05.974 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60b4beb4: startup date [Wed Sep 12 10:28:02 CST 2018]; root of context hierarchy
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+10:28:06.068 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases],methods=[GET]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+10:28:06.084 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+10:28:06.084 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+10:28:06.084 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:28:06.084 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:28:06.084 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:28:06.115 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:06.115 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:06.316 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:28:06.629 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:28:06.629 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:28:06.629 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:28:06.644 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:28:06.660 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:28:06.676 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:28:06.691 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 5.027 seconds (JVM running for 5.723)
+10:28:10.743 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:28:10.743 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:28:10.774 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+10:28:10.852 logback [http-nio-8080-exec-1] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+10:28:27.367 logback [http-nio-8080-exec-2] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+10:28:32.583 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+10:28:36.729 logback [http-nio-8080-exec-5] INFO  c.t.d.controller.LoginController - =================校验验证码
+10:28:36.744 logback [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:28:36.963 logback [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:28:36.994 logback [http-nio-8080-exec-5] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+10:28:48.589 logback [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+10:29:17.047 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 8360 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+10:29:17.047 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+10:29:17.219 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c4e8b2: startup date [Wed Sep 12 10:29:17 CST 2018]; root of context hierarchy
+10:29:19.594 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:29:19.640 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:29:19.656 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:29:19.656 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:29:19.687 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+10:29:19.892 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:29:19.892 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2673 ms
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+10:29:20.002 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:29:20.545 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:29:20.826 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c4e8b2: startup date [Wed Sep 12 10:29:17 CST 2018]; root of context hierarchy
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+10:29:20.951 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:29:20.967 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:29:20.998 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:29:20.998 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:29:21.169 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:29:21.450 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:29:21.450 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:29:21.450 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:29:21.466 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:29:21.482 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:29:21.513 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:29:21.513 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 5.107 seconds (JVM running for 5.746)
+10:29:32.816 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:29:32.816 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:29:32.840 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+10:29:32.882 logback [http-nio-8080-exec-1] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+10:29:36.648 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - =================校验验证码
+10:29:36.669 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:29:36.868 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:29:36.883 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+10:29:47.501 logback [http-nio-8080-exec-9] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:31:02.856 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s194ms931µs329ns).
+10:33:09.047 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s949ms926µs249ns).
+10:34:20.857 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s813ms923µs491ns).
+10:43:08.939 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 7960 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+10:43:08.955 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+10:43:09.049 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38089a5a: startup date [Wed Sep 12 10:43:09 CST 2018]; root of context hierarchy
+10:43:11.072 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:43:11.088 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:43:11.104 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:43:11.104 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+10:43:11.104 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+10:43:11.252 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:43:11.252 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2203 ms
+10:43:11.362 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:43:11.362 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:43:11.362 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:43:11.362 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:43:11.377 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+10:43:11.377 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+10:43:11.377 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+10:43:11.377 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:43:11.940 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:12.174 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38089a5a: startup date [Wed Sep 12 10:43:09 CST 2018]; root of context hierarchy
+10:43:12.283 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+10:43:12.285 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+10:43:12.286 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+10:43:12.286 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+10:43:12.286 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+10:43:12.286 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+10:43:12.288 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+10:43:12.288 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+10:43:12.288 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+10:43:12.291 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:43:12.292 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:43:12.328 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:12.328 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:12.544 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:43:12.829 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:43:12.830 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:43:12.836 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:43:12.849 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:43:12.860 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:43:12.876 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:43:12.891 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 4.811 seconds (JVM running for 5.434)
+10:43:25.954 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:43:25.954 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:43:25.977 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+10:43:26.081 logback [http-nio-8080-exec-1] INFO  com.tota.datadict.filter.LoginFilter - 未登录或登陆过期，请重新登陆
+10:43:37.485 logback [http-nio-8080-exec-5] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+10:43:42.104 logback [http-nio-8080-exec-2] INFO  c.t.d.controller.LoginController - =================校验验证码
+10:43:42.123 logback [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:43:42.306 logback [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:43:42.338 logback [http-nio-8080-exec-2] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+10:44:00.142 logback [http-nio-8080-exec-9] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:44:36.483 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s63ms512µs224ns).
+10:46:15.194 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s262ms84µs35ns).
+11:08:03.570 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 11696 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+11:08:03.586 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+11:08:03.727 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@471a9022: startup date [Wed Sep 12 11:08:03 CST 2018]; root of context hierarchy
+11:08:05.977 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:08:05.993 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:08:06.008 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:08:06.008 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:08:06.024 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+11:08:06.133 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:08:06.133 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2406 ms
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+11:08:06.258 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:08:06.868 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:08:07.149 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@471a9022: startup date [Wed Sep 12 11:08:03 CST 2018]; root of context hierarchy
+11:08:07.243 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+11:08:07.243 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+11:08:07.243 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+11:08:07.243 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:08:07.258 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:08:07.290 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:08:07.290 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:08:07.461 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:08:07.743 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:08:07.743 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:08:07.743 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11:08:07.758 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:08:07.774 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:08:07.805 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:08:07.805 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 4.875 seconds (JVM running for 5.661)
+11:08:29.827 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:08:29.827 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:08:29.849 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+11:08:29.886 logback [http-nio-8080-exec-1] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+11:08:34.236 logback [http-nio-8080-exec-6] INFO  c.t.d.controller.LoginController - =================校验验证码
+11:08:34.259 logback [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:08:34.462 logback [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:08:34.493 logback [http-nio-8080-exec-6] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+11:09:05.687 logback [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:15:16.325 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 8580 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+11:15:16.325 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+11:15:16.466 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d07a63d: startup date [Wed Sep 12 11:15:16 CST 2018]; root of context hierarchy
+11:15:18.575 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:15:18.591 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:15:18.606 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:15:18.606 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:15:18.622 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+11:15:18.810 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:15:18.810 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2344 ms
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+11:15:18.935 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:15:19.560 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:15:19.810 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d07a63d: startup date [Wed Sep 12 11:15:16 CST 2018]; root of context hierarchy
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+11:15:19.919 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+11:15:19.935 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+11:15:19.935 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+11:15:19.935 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+11:15:19.935 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:15:19.935 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:15:19.982 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:15:19.982 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:15:20.153 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:15:20.607 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:15:20.622 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:15:20.622 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11:15:20.638 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:15:20.653 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:15:20.669 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:15:20.685 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 5.11 seconds (JVM running for 5.733)
+11:15:32.560 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:15:32.560 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:15:32.576 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+11:15:32.623 logback [http-nio-8080-exec-1] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+11:15:37.387 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - =================校验验证码
+11:15:37.409 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:15:37.612 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:15:37.628 logback [http-nio-8080-exec-3] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+11:15:50.224 logback [http-nio-8080-exec-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:17:38.150 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s846ms863µs900ns).
+11:20:22.144 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 14296 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+11:20:22.159 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+11:20:22.347 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@478db956: startup date [Wed Sep 12 11:20:22 CST 2018]; root of context hierarchy
+11:20:24.457 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:20:24.503 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:20:24.535 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:20:24.535 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+11:20:24.550 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+11:20:24.691 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:20:24.691 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2344 ms
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'CorsFilter' to urls: [/*]
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter LoginFilter was not registered (possibly already registered?)
+11:20:24.816 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+11:20:25.441 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:20:25.675 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@478db956: startup date [Wed Sep 12 11:20:22 CST 2018]; root of context hierarchy
+11:20:25.769 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:20:25.785 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:20:25.816 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:20:25.816 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:20:26.113 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:20:26.421 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:20:26.421 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11:20:26.437 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11:20:26.452 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:20:26.468 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:20:26.484 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:20:26.484 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 5.106 seconds (JVM running for 5.837)
+11:20:36.701 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:20:36.701 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:20:36.723 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+11:20:40.068 logback [http-nio-8080-exec-2] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+11:20:44.827 logback [http-nio-8080-exec-4] INFO  c.t.d.controller.LoginController - =================校验验证码
+11:20:44.842 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:20:45.045 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:20:45.077 logback [http-nio-8080-exec-4] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过
+11:20:52.574 logback [http-nio-8080-exec-10] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11:22:10.887 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s685ms446µs577ns).
+11:22:57.852 logback [http-nio-8080-exec-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+11:23:44.650 logback [http-nio-8080-exec-9] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+11:26:51.329 logback [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s270ms115µs870ns).

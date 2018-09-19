@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新数据库</title>
+
+<style>
+input{
+width:250px;
+}
+
+</style>
+</head>
+<body>
+<div>
+<table  style="margin-left:auto;margin-right:auto;">
+    <tr><td>URL：</td><td><input type="text" id="databaseUrl" placeholder="jdbc:mysql://192.168.1.55:3306/db1"></input></td></tr>
+    <tr><td>用户名：</td><td><input type="text" id="databaseUserName" placeholder="登陆数据库的用户名"></input></td></tr>
+    <tr><td>密码：</td><td><input type="text" id="databasePassWord" placeholder="登陆数据库的密码"></input></td></tr>
+    <tr><td><button type="button" onclick="addDatabase()">确认</button></td><td><button type="button" onclick="window.close()">取消</button></td></tr>
+</table>
+</div>
+</body>
+<script type="text/javascript" src="/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/addDatabase.js"></script>
+</html>

@@ -1,0 +1,46 @@
+18:08:21.443 logback [main] INFO  c.tota.datadict.DatadictApplication - Starting DatadictApplication on Win10 with PID 7044 (D:\github-repository\repository-test1\datadict\target\classes started by win 10 in D:\github-repository\repository-test1\datadict)
+18:08:21.448 logback [main] INFO  c.tota.datadict.DatadictApplication - No active profile set, falling back to default profiles: default
+18:08:21.604 logback [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Mon Sep 10 18:08:21 CST 2018]; root of context hierarchy
+18:08:23.678 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 65432 (http)
+18:08:23.691 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-65432"]
+18:08:23.703 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:08:23.703 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+18:08:23.713 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tools\TortoiseGit\bin;D:\tools\apache-maven-3.5.3\bin;D:\tools\mysql-5.7.21-winx64\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;D:\soft\yarn\bin\;D:\soft\nodejs\;D:\tools\Git\cmd;D:\software\OpenSSL-Win64\bin;C:\Users\win 10\AppData\Local\Microsoft\WindowsApps;C:\Users\win 10\AppData\Local\GitHubDesktop\bin;C:\Users\win 10\AppData\Local\Yarn\bin;C:\Users\win 10\AppData\Roaming\npm;.]
+18:08:23.858 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:08:23.858 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2254 ms
+18:08:24.011 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:08:24.011 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:08:24.012 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:08:24.012 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:08:24.012 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'LoginFilter' to urls: [/datadict/*]
+18:08:24.012 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+18:08:24.927 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:08:25.322 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Mon Sep 10 18:08:21 CST 2018]; root of context hierarchy
+18:08:25.468 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showTables]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showTables(org.springframework.ui.ModelMap)
+18:08:25.470 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showDatabases]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showDatabases(org.springframework.ui.ModelMap)
+18:08:25.471 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateColumn]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateColumn()
+18:08:25.471 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/showColumns]}" onto public java.lang.String com.tota.datadict.controller.DataDictController.showColumns(org.springframework.ui.ModelMap)
+18:08:25.472 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/addDatabases]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.addDatabases()
+18:08:25.472 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/datadict/updateTable]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.DataDictController.updateTable()
+18:08:25.474 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/verifyCode]}" onto public java.lang.String com.tota.datadict.controller.LoginController.verifyCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+18:08:25.474 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/checkUserLogin],methods=[POST]}" onto public com.tota.datadict.common.AjaxResult com.tota.datadict.controller.LoginController.checkUserLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.lang.Exception
+18:08:25.474 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.tota.datadict.controller.LoginController.login()
+18:08:25.476 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:08:25.477 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:08:25.541 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:08:25.541 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:08:26.385 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:08:26.391 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+18:08:26.408 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+18:08:26.436 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-65432"]
+18:08:26.470 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:08:26.511 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 65432 (http) with context path ''
+18:08:26.517 logback [main] INFO  c.tota.datadict.DatadictApplication - Started DatadictApplication in 5.566 seconds (JVM running for 6.091)
+18:08:52.284 logback [http-nio-65432-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:08:52.284 logback [http-nio-65432-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:08:52.307 logback [http-nio-65432-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+18:08:52.344 logback [http-nio-65432-exec-1] INFO  c.t.d.controller.LoginController - ===========跳转登陆页面
+18:08:58.219 logback [http-nio-65432-exec-7] INFO  c.t.d.controller.LoginController - =================校验验证码
+18:08:58.239 logback [http-nio-65432-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:08:58.835 logback [http-nio-65432-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:08:58.891 logback [http-nio-65432-exec-7] INFO  c.t.d.controller.LoginController - |---------------用户信息验证通过

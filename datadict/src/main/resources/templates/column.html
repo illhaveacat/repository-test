@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>表字段信息</title>
+    <style>
+table.dataintable {
+  margin-top:15px;
+  border-collapse:collapse;
+  border:1px solid #aaa;
+  width:100%;
+}
+table.dataintable th {
+  vertical-align:baseline;
+  padding:5px 15px 5px 6px;
+  background-color:#3F3F3F;
+  border:1px solid #3F3F3F;
+  text-align:left;
+  color:#fff;
+}
+table.dataintable td {
+  vertical-align:text-top;
+  padding:6px 15px 6px 6px;
+  border:1px solid #aaa;
+}
+table.dataintable tr:nth-child(odd) {
+  background-color:#F5F5F5;
+}
+table.dataintable tr:nth-child(even) {
+  background-color:#fff;
+}
+
+
+
+    </style>
+
+    <script type="text/javascript" src="/js/common/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/datadict.js"></script>
+</head>
+<body style="background-image:url(/images/img_bg_2.jpg); background-size:cover; text-align:center;">
+
+<div style="margin: 0 auto;padding-bottom: 0%;padding-top: 7.5%;width: 800px;">
+    <div>
+        <a href="#" onclick="javascript :history.back(-1);">返回上一级</a>
+        <h3 th:text="|${tableName}表|"></h3>
+        <table class="dataintable">
+            <tr>
+                <th scope="col">字段名</th>
+                <th scope="col">字段类型</th>
+                <th scope="col">长度</th>
+                <th scope="col">默认值</th>
+                <th scope="col">备注</th>
+                <th scope="col">操作</th>
+            </tr>
+            <tr th:each="column:${columns}">
+                <td th:text="${column.columnName}"></td>
+                <td th:text="${column.columnDataType}"></td>
+                <td th:text="${column.columnLength}"></td>
+                <td th:text="${column.columnDefaultValue}"></td>
+                <td th:text="${column.columnComment}"></td>
+                <td th:onclick="|updateColumn(this,'${column.columnId}')|"><a href="javascript:void(0);">修改</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
